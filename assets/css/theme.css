@@ -1,0 +1,184 @@
+*{ font-family: 'Exo', sans-serif; }
+
+/* Font-awesome Extended */
+.fa{ vertical-align:  middle; }
+
+/* Section */
+.section{ padding: 70px 0; min-height: 50vh; box-sizing: border-box;}
+.section .headline-sm{ color: #ff6d6d; text-transform: uppercase }
+.section .headline{ margin-bottom: 35px; font-weight: normal; font-size: 3em; }
+.section .thumbnail{ border:  none; background-color: transparent; margin-top: 50px;}
+
+/* Section Home */
+.section.section-home{ min-height: 100vh; background: url(../img/video_background.png) no-repeat center center; background-size: cover; }
+.section.section-home .headline{ font-weight: 100; font-size: 4em; }
+.section.section-home .list-unstyled li{ margin-bottom: 30px; }
+.section.section-home .list-unstyled li:last-child{ margin-bottom: 0; }
+.section.section-home .btn-round{ border-radius: 100%; width: 40px; height: 40px; line-height: 24px; background-color: rgba(0,0,0,.5); color: white; text-align: center; transition: all ease-in .4s }
+.section.section-home .btn-round:hover{ background-color: #3b5998; color: #FFF; }
+.section.section-home .btn-round .fa{ margin-left: 3px; }
+.section.section-home .btn-danger{ background-color: #ff6d6d; text-transform: uppercase; padding-left: 40px; padding-right: 40px; border-radius: 2px; }
+
+
+/* Section Platform */
+.section.section-platform{ background: url(../img/second_section_background.png) no-repeat; background-size: 35%; background-position: right bottom; }
+.section.section-platform p{ margin-bottom: 40px; }
+
+/* Section Features */
+.section.section-features{ background: url(../img/Pen-holder.png) no-repeat left 100px top, url(../img/Coffee-Cup.png) no-repeat right 100px bottom, url(../img/Ear-phone.png) no-repeat right 100px top; background-color: #f6f5f3; }
+
+/* Section New Design */
+.section.section-newDesign{ background:  url(../img/newDesign_bg.png) no-repeat; background-position: left; }
+.section.section-newDesign .newDesign-content{ padding-top: 25px; }
+
+/* Section - Client */
+.section.section-client{ background: url(../img/client_bg.png) no-repeat center center; background-size: cover; }
+.section.section-client *{ color: white; }
+.section.section-client .headline-sm{ color: #ff6d6d !important; }
+.section.section-client p{ margin: 30px 0; font-style: italic; color: #b5b6b8;  }
+.section.section-client .list-inline li{ margin-right: 30px; }
+.section.section-client .list-inline li img{ width: 70%; }
+
+/* Section - Browser */
+.section.section-browser{ padding-bottom: 0; background-color: #f6f5f3; }
+.section.section-browser .browser-img{ margin-top: 50px; }
+
+/* Section - Contact */
+.section.section-contact{ background-color: #323969; color: white; }
+.section.section-contact .form-contact{ margin-top: 50px; }
+.section.section-contact .form-contact .form-control{ background-color: #464c77; border-color: #999cb4; border-radius: 3px; font-size: 12px; color: white; }
+.section.section-contact .form-contact .form-control-feedback{ right: 5%; color: red; }
+
+.section.section-contact .form-contact .form-control:focus:valid + .form-control-feedback { color: lime; right: 5% !important; }
+.section.section-contact .form-contact .form-control:focus:invalid + .form-control-feedback { color: yellow; right: 5% !important; }
+
+.section.section-contact .form-contact input::-webkit-input-placeholder{ color: #dfdfe3; text-transform: uppercase; }
+.section.section-contact .form-contact input::-moz-placeholder { color: #dfdfe3; text-transform: uppercase; }
+.section.section-contact .form-contact input:-ms-input-placeholder { color: #dfdfe3; text-transform: uppercase; }
+
+.section.section-contact .form-contact .form-btn-wrapper{ position: relative; }
+.section.section-contact .form-contact .form-btn-wrapper .notice-trail{ position: absolute; top: -50px; left: 0; }
+.section.section-contact .terms_and_service{ padding-top: 25px; }
+.section.section-contact .terms_and_service a{ color: white; text-decoration: underline; }
+ 
+
+/* Footer */
+.footer{ padding: 40px 0; background: url(../img/footer_bg.png) no-repeat; background-position: bottom right; background-size: 20%; }
+.footer .headline{ font-weight: bold; font-size: 1.5em; }
+.footer .list-unstyled li{ margin-bottom: 10px; }
+.footer .list-unstyled li:last-child{ margin-bottom: 0; }
+.footer .list-unstyled a{ color: #888; }
+.footer .form-inline .form-control{ border-top-right-radius: 0; border-bottom-right-radius: 0; background-color: #f6f6f6; }
+.footer .form-inline .btn{ margin-left: -5px; }
+.footer .form-inline .btn.btn-danger{ background-color: #ff6d6d; border-top-left-radius: 0; border-bottom-left-radius:0 ;}
+.footer .social-icons-list{ padding-top: 25px; }
+.footer .social-icons-list li{ margin-right: 10px; }
+.footer .social-icons-list li a{ color: #BBB; }
+
+/* Helper Class */
+.center-vh{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+.btn{ border-radius: 3px; }
+.text-danger{ color: #ff6d6d; }
+
+/* Bootstrap Breakpoints */
+
+/* Extra Small Device - Mobile */
+@media screen and (max-width: 767px) {
+	
+	/* Sections */
+	.section{ padding: 25px 0; }
+	.section .headline{ font-size: 1.5em; margin-bottom: 15px; }
+	.section .thumbnail{ margin-top: 15px; }
+
+	/* Section Home */
+	.section.section-home .headline{ font-weight: 300; font-size: 1.5em; }
+
+	/* Section platform */
+	.section.section-platform{ background-image: none; }
+	.section.section-platform p{ margin-bottom: 20px; }
+
+	/* Section Features */
+	.section.section-features{ background-image: none; }
+	.section.section-features .thumbnail .caption h3{ font-size: 1.25em; }
+
+	/* Section newDesign */
+	.section.section-newDesign .headline-sm,
+	.section.section-newDesign .text-danger { color: white; }
+	.section.section-newDesign p{ color: #3c3c3c; }
+
+	/* Section client */
+	.section.section-client .thumbnail .caption h3{ font-size: 1.25em; }
+	.section.section-client .thumbnail p{ margin: 10px 0; font-size: .8em; }	
+
+	/* Section footer */
+	.footer{ background-image: none; }
+	.footer .form-inline .form-control{ display: inline-block; width: 80%; }
+	.footer .form-inline .btn{ display: inline-block; width: 20%; }
+}
+
+/* Small Device - Tab */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	/* Sections */
+	.section{ padding: 35px 0; }
+	.section .headline{ font-size: 2em; margin-bottom: 25px; }
+	.section .thumbnail{ margin-top: 25px; }
+
+	/* Section Home */
+	.section.section-home .headline{ font-weight: 300; font-size: 2.3em; }
+
+	/* Section platform */
+	.section.section-platform{ background-image: none; }
+	.section.section-platform p{ margin-bottom: 20px; }
+	
+	/* Section Features */
+	.section.section-features{ background-image: none; }
+	.section.section-features .thumbnail .caption h3{ font-size: 1.25em; }
+
+	/* Section newDesign */
+	.section.section-newDesign .newDesign-content{ padding-top: 0px; }
+	
+	/* Section Client */
+	.section.section-client .list-inline li{ margin-right: 5px; }
+
+	/* Section Contact */
+	.section.section-contact .form-contact .form-btn-wrapper .notice-trail{ top: -30px;  font-size: .8em; }
+	.section.section-contact .form-contact .form-btn-wrapper .notice-trail img{ width: 22%; }
+
+	/* Section footer */
+	.footer{ background-image: none; }
+}
+
+/* Medium Device - Laptop / Small Monitor */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	/* Sections */
+	.section{ padding: 35px 0; }
+	.section .headline{ font-size: 2em; margin-bottom: 25px; }
+	.section .thumbnail{ margin-top: 25px; }
+
+	/* Section Home */
+	.section.section-home .headline{ font-weight: 100; font-size: 3em; }
+
+	/* Section platform */
+	.section.section-platform p{ margin-bottom: 20px; }
+	
+	/* Section Features */
+	.section.section-features{ background-size: 10%; }
+	.section.section-features .thumbnail .caption h3{ font-size: 1.25em; }
+
+	/* Section newDesign */
+	.section.section-newDesign .newDesign-content{ padding-top: 0px; }
+	
+	/* Section Client */
+	.section.section-client .list-inline li{ margin-right: 5px; }
+
+	/* Section Contact */
+	.section.section-contact .form-contact .form-btn-wrapper .notice-trail{ top: -30px;  font-size: .8em; }
+	.section.section-contact .form-contact .form-btn-wrapper .notice-trail img{ width: 22%; }
+
+	/* Section footer */
+	.footer .form-inline .form-control{ display: inline-block; width: 80%; }
+	.footer .form-inline .btn{ display: inline-block; width: 20%; }
+
+}
